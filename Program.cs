@@ -4,10 +4,10 @@
     {
         static void Main(string[] args)
         {
-            //777
+            
             string[] CurrencyCodes = { "USD","EUR", "AUD", "ARS", "BYN", "BRL", "AED" };
             decimal[] CurrencyRates = { 1.7000M, 1.8455M, 1.1325M, 0.0019M, 0.5195M, 0.3314M, 0.4628M };
-            
+
             while (true)
             {
                 Console.WriteLine("Current commands");
@@ -20,15 +20,15 @@
                 {
                     Console.WriteLine("Show recent currency rates are: ");
                     int i = 0;
-                    while (i< CurrencyCodes.Length)
+                    while (i < CurrencyCodes.Length)
                     {
                         Console.WriteLine($"{CurrencyCodes[i]}: {CurrencyRates[i]}");
                         i++;
                     }
-                    
+
                 }
-                
-            }
+
+           
         }
     }
 }
